@@ -1,6 +1,5 @@
 public class Main {
 
-    // Valida que el monto sea mayor que cero antes de procesar el pago
     private static void pagar(MedioPago medio, double monto) {
         if (monto > 0) {
             medio.procesarPago(monto);
@@ -17,6 +16,6 @@ public class Main {
 
         pagar(tarjeta, 15000.50);
         pagar(billetera, 8200);
-        pagar(billetera, 0); // prueba de validación
+        pagar(billetera, 0); 
     }
 }
